@@ -1,0 +1,95 @@
+@use "../global/" as *;
+
+nav {
+    font-family: $big-font;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 200;
+    a {
+      color: $color-white;
+    }
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    max-width: 120rem;
+    margin: 0 auto;
+    font-size: $text-normal;
+    padding: 3rem 2rem;
+    align-items: center;
+    color: $color-white;
+
+    p {
+        font-size: 3rem;
+        font-weight: 700;
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-image: $color-golden-brown;
+        color: transparent;
+        cursor: pointer;
+      }
+
+    ul {
+        
+        display: flex;
+        gap: 4rem;
+        list-style: none;
+    
+        @media (max-width: 750px) {
+          display: none;
+        }
+        a {
+            color: $color-white;
+            font-weight: 700;
+      
+            &:hover {
+              transition: all 0.3s;
+              background-clip: text;
+              -webkit-background-clip: text;
+              color: transparent;
+              background-image: $color-golden-brown;
+            }
+          }
+    }
+
+    span {
+    display: flex;
+    gap: 2rem;
+
+    i {
+      cursor: pointer;
+
+      @media (max-width: 750px) {
+        display: none;
+      }
+
+      &:hover {
+        transition: all 0.3s;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: $color-golden-logo;
+        background-image: $color-golden-brown;
+      }
+    }
+    
+  }
+  }
+
+  .hamburger-menu {
+    display: none;
+    font-size: 2.7rem;
+  
+    @media (max-width: 750px) {
+      display: flex !important;
+    }
+  }
+  
+  .sticky-nav {
+    background-color: $bg-black;
+    box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.16);
+    position: fixed;
+  }
+  
