@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import MarketUpdate from "../components/MarketUpdate";
 import Navbar from "../components/Navbar";
@@ -11,6 +12,7 @@ function Home() {
             <Hero/>
             <MarketUpdate/>
             <WhyUs/>
+            <Footer/>
         </div>
     )
 }
