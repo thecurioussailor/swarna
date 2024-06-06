@@ -1,6 +1,7 @@
 import Hero from "../components/Hero";
 import MarketUpdate from "../components/MarketUpdate";
 import Navbar from "../components/Navbar";
+import WhyUs from "../components/WhyUs";
 
 function Home() {
 
@@ -9,6 +10,7 @@ function Home() {
             <Navbar/>
             <Hero/>
             <MarketUpdate/>
+            <WhyUs/>
         </div>
     )
 }
