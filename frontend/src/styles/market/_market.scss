@@ -53,8 +53,79 @@
                 width: fit-content;
             }
 
+            p:first-child {
+                text-align: left;
+            }
+
+        }
+
+        &__row {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__pagination {
+            display: flex;
+            gap: 1.3rem;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5rem;
+
+            button {
+                font-size: $text-normal;
+                width: 5rem;
+                border-radius: 50%;
+                height: 5rem;
+                cursor: pointer;
+                background-color: $color-white;
+            }
         }
 
         
+    }
+    .activePagi {
+        background: $color-golden-brown;
+        color: $color-white;
+    }
+
+    .coin-row {
+        display: grid;
+        grid-template-columns: 16fr 25fr 25fr 25fr;
+        color: $color-white;
+        font-size: $h4-size;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        text-align: right;
+        font-weight: 500;
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid $color-golden-logo;
+        align-items: center;
+        gap: 2rem;
+        background-color: $bg-black;
+        user-select: none;
+
+        &:hover {
+            background-color: #200840;
+
+        }
+
+        span{
+            text-align: left;
+            align-items: center;
+            display: flex;
+            gap: 2rem;
+
+            @media (max-width: 800px) {
+                width: 19rem;
+            }
+
+            img{
+                width: 5rem;
+                height: 5rem;
+            }
+        }
     }
 }
