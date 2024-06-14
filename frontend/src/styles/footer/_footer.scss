@@ -28,7 +28,9 @@ footer {
     color: $color-white;
     font-size: 4rem;
     // margin-top: 4rem;
-
+    a:visited{
+      color: inherit;
+    }
     i {
       cursor: pointer;
 

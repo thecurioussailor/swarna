@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import Btc from "../images/hero/bitcoin.png";
 import Eth from "../images/hero/ethereum.png";
 import { Link } from "react-router-dom";
-
+// import { configDotenv } from "dotenv";
 function Hero () {
 
     const [data, setData] = useState([]);
     const [coinsLoad, setCoinsLoad] = useState(true);
-
+    // const key = configDotenv.process.env.KEY;
     const url = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&category=layer-1&order=market_cap_desc&per_page=4`;
 
     

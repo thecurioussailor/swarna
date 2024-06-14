@@ -6,10 +6,10 @@ function Footer() {
         <footer>
             <div className="footer-content">
                 <div className="footer-content__socials">
-                    <i><IconBrandTwitter className="footer-icon" /></i>
-                    <i><IconBrandLinkedin className="footer-icon" /></i>
-                    <i><IconBrandDiscord className="footer-icon" /></i>
-                    <i><IconBrandGithub className="footer-icon" /></i>
+                    <a href="https://x.com/sagar11ashutosh" target="_blank"><i><IconBrandTwitter className="footer-icon" /></i></a>
+                    <a href="https://www.linkedin.com/in/ashutosh-sagar-4b2612185/" target="_blank"><i><IconBrandLinkedin className="footer-icon" /></i></a>
+                    <a><i><IconBrandDiscord className="footer-icon" /></i></a>
+                    <a href="https://github.com/thecurioussailor" target="_blank"><i><IconBrandGithub className="footer-icon" /></i></a>
                     
                     
                     

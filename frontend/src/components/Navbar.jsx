@@ -42,8 +42,8 @@ function Navbar() {
                         </li>
                     </ul>
                     <span>
-                        <i><IconBrandTwitter/></i>
-                        <i><IconBrandGithub/></i>
+                        <a href="https://x.com/sagar11ashutosh" target="_blank"><i><IconBrandTwitter/></i></a>
+                        <a href="https://github.com/thecurioussailor" target="_blank"><i><IconBrandGithub/></i></a>
                        
                         {/* mobile */}
                         <IconMenu2 className="hamburger-menu" />
